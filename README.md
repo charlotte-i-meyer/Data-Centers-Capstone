@@ -2,16 +2,18 @@
 
 **By Charlotte Meyer**
 
-**April 12, 2026**
+**May 4, 2026**
+
+This Github repository contains ipynb files and data for my Data Analytics Capstone. To run the code, you will need python, and the data that each file requires should be in the same folder as the ipynb file is in.
+
+_Statsmodels Logistic Regression.ipynb_ conducts the logistic regression that the majority of the project is based upon. 
+Data needed: cejst_logistic_regression.csv
+
+_KDE Plot.ipynb_ creates KDE plots for the predictors in the logistic regression.
+Data needed: cejst_logistic_regression.csv
+
+_Atlas Dataframe.ipynb_ uses shapefile data to create a spatial join that merges the CEJST dataset with the Open Source Data Center Atlas dataset, into a dataframe that can be used for the logistic regression. It outputs cejst_logistic_regression.csv
+Data needed: all data found in _Data for "Atlas Dataframe.ipynb".zip_
 
 _DA Capstone.ipynb_ conducts summary statistics of data centers in the US, including a map of proposed data centers in Ohio. It also includes a chi-squared test meant to determine the relationship between air quality and proposed data centers. This file was used for Early Results.
-
-_Logistic Regression - Data Centers.ipynb_ creates a logistic regression meant to use environmental justice indicators to predict whether data centers will be located in census tracts. This file was used for the First Draft.
-
-These files require you to have the following datasets in the same file as the ipynb: 
-
-_U.S. Data Centers - FracTracker.csv_ – both files
-
-_CEJST_2.0-communities.csv.zip_ – both files
-
-_tl_2025_39_tract.zip_ – only needed for _DA Capstone.ipynb_
+Data needed: The CEJST dataset found in _Data for "Atlas Dataframe.ipynb".zip_, plus U.S. Data Centers - FracTracker.cs
